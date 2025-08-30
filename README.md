@@ -4,7 +4,7 @@ Projeto de um site de música feito com **HTML e CSS**, focado em design clean e
 
 ## 🔗 Link ao GitHub Pages
 
-[Veja o site no GitHub Pages](https://lucasfelipe01.github.io/site-music/)  
+[Veja o site no GitHub Pages](https://lucasfelipe01.github.io/Site-music/)  
 
 ---
 
@@ -23,17 +23,6 @@ Projeto de um site de música feito com **HTML e CSS**, focado em design clean e
 
 - HTML5  
 - CSS3 (Flexbox, posicionamento absoluto, responsividade)
-
----
-
-## 📁 Estrutura do projeto
-
-Site-music-main/
-├─ index.html
-├─ css/
-│ └─ style.css
-├─ IMGS/
-│ └─ 50cent.png
 
 ---
 
