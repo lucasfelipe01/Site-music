@@ -67,14 +67,11 @@ nav {
 }
 
 .parte2 {
-  width: 60%;
-  height: 100%;
-  background-image: url('../IMGS/50cent.png');
+  background-image: url('/IMGS/50cent.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
 }
-
 
 .buttons {
   margin-top: 60px;
