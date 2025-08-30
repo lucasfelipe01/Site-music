@@ -28,12 +28,12 @@ Projeto de um site de música feito com **HTML e CSS**, focado em design clean e
 
 ## 📁 Estrutura do projeto
 
+Site-music-main/
 ├─ index.html
 ├─ css/
 │ └─ style.css
 ├─ IMGS/
 │ └─ 50cent.png
-
 
 ---
 
