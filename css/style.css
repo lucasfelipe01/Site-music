@@ -1,141 +1,136 @@
+/* Reset e base */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav a {
-  color: white;
-  font-size: 15px;
-  margin-right: 50px;
-  font-size: arial;
-  display: flex;
-  justify-content: space-between;
-}
-
-main {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  flex-grow: 1;
-}
-
+/* Header */
 header {
-  height: 40px;
-  background: #05072F;
-  opacity: 0.79;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 18px;
+    height: 60px;
+    background: #05072F;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 0 20px;
 }
 
-nav {
-  display: flex;
+header nav {
+    display: flex;
 }
 
+header nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+header div a {
+    margin-right: 10px;
+}
+
+/* Main */
+main {
+    display: flex;
+    height: calc(100% - 60px); /* ocupa a tela menos o header */
+}
+
+/* Parte 1 (texto) */
 .parte1 {
-  width: 50%;
-  height: 100%;
-  background-color: #05072F;
-  color: white;
-}
-
-.fecafmusic {
-  margin-left: 30px;
-}
-
-.account {
-  margin-right: 30px;
-}
-
-.music {
-  margin-right: 15px;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
-.for{
-  color: white;
-}
-
-.parte2 {
-  width: 60%;
-  height: 100%;
-  background-image: url('../IMGS/50cent.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-
-.buttons {
-  margin-top: 60px;
+    width: 50%;
+    background-color: #05072F;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .parte3 {
-  margin-top: 50px;
-  margin: 40px;
-  font-size: 100px;
-  display: flex;
+    font-size: 80px;
+    display: flex;
+    margin-bottom: 20px;
 }
 
-.parte4 {
-  margin-top: 10px;
-  margin: 40px;
-  font-size: 100px;
-}
-
-p {
-  margin-top: 600px;
-  margin-left: 0;
-}
-
-.botao {
-  justify-content: space-between;
-  margin: 40px;
-  background-color: red;
-  padding: 24px;
-  border-radius: 20px;
-  margin-top: 1600px;
-}
-
-.botao1 {
-  background-color: #410093;
+.for-text {
+    color: white;
+    margin-left: 10px;
 }
 
 .parte7 {
-  margin-top: 100px;
-  display: flex;
-  align-content: center;
-  margin: 40px;
-  font-size: 16px;
-  line-height: 2;
-  width: 55%;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 40px;
+    width: 90%;
 }
 
+.botao {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.botao1 {
+    background-color: #410093;
+}
+
+/* Parte 2 (imagem) */
+.parte2 {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #000; /* fundo caso a imagem não carregue */
+}
+
+.parte2 .imagem-direita {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
 footer {
-  height: 40px;
-  display: flex;
-  background: #05072F;
-  justify-content: center;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  opacity: 0.79;
+    height: 40px;
+    background: #05072F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
 
-span {
-  color: red;
-}
+/* Responsivo */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
 
-div {
-  justify-content: space-between;
+    .parte1, .parte2 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .parte3 {
+        font-size: 50px;
+    }
+
+    .parte2 .imagem-direita {
+        height: auto;
+        width: 100%;
+    }
 }
